@@ -1,16 +1,41 @@
-# market_sphere_vendor
+# Market Sphere - Vendor
 
-A new Flutter project.
+- Market Sphere Vendor is a mobile application for vendors to manage their products, view orders, and track sales performance. Built using Flutter, it provides a robust interface for seamless vendor operations.
+- Developed under the **Market Sphere Project**.
 
-## Getting Started
+## ⚡️ Features
+- Add, edit, and manage products
+- Track orders and sales
+- View analytics and insights
+- Secure vendor authentication
+- Notification system for orders and updates
 
-This project is a starting point for a Flutter application.
+## 👩‍💻 Technologies Used
+- **Flutter**: For cross-platform UI/UX
+- **Dart**: Programming language
+- **REST APIs**: Backend integration
 
-A few resources to get you started if this is your first Flutter project:
+## ⏳ Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone the repository:
+   ```
+   git clone https://github.com/SanjayKParida/market-sphere-vendor.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd market-sphere-vendor
+   ```
+3. Install dependencies:
+   ```
+   flutter pub get
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+5. Run the app:
+   ```
+   flutter run
+   ```
+
+## 🌍 Contributions
+
+Contributions are welcome! Fork the repository and submit a pull request with your changes.
+
