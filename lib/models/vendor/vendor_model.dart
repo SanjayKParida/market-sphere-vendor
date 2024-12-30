@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 class VendorModel {
@@ -20,7 +21,6 @@ class VendorModel {
     required this.password,
   });
 
-  //CONVERTING TO MAP TO EASILY CONVERT TO JSON IN ORDER TO SEND TO MONGODB
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'id': id,
@@ -34,19 +34,21 @@ class VendorModel {
     };
   }
 
-  //CONVERTING TO VENDOR MODEL TO USE IN OUR APPLICATION
   factory VendorModel.fromMap(Map<String, dynamic> map) {
     return VendorModel(
-      id: map['id'] as String,
-      fullName: map['fullName'] as String,
-      email: map['email'] as String,
-      state: map['state'] as String,
-      city: map['city'] as String,
-      locality: map['locality'] as String,
-      role: map['role'] as String,
-      password: map['password'] as String,
+      id: map['_id'] as String? ?? "",
+      fullName: map['fullName'] as String? ?? "",
+      email: map['email'] as String? ?? "",
+      state: map['state'] as String? ?? "",
+      city: map['city'] as String? ?? "",
+      locality: map['locality'] as String? ?? "",
+      role: map['role'] as String? ?? "",
+      password: map['password'] as String? ?? "",
     );
   }
 
   String toJson() => json.encode(toMap());
+
+  factory VendorModel.fromJson(String source) =>
+      VendorModel.fromMap(json.decode(source) as Map<String, dynamic>);
 }
