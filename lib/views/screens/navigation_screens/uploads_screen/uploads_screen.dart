@@ -386,8 +386,6 @@ class _UploadsScreenState extends ConsumerState<UploadsScreen> {
                               selectedCategory = null;
                               selectedSubcategory = null;
                               images.clear();
-
-                              _formKey.currentState!.reset();
                             });
                           } catch (e) {
                             showSnackbar(context, "Error Uploading : $e");
