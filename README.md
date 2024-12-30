@@ -1,4 +1,6 @@
 # Market Sphere - Vendor
+[![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?logo=dart&logoColor=white)](#)
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=fff)](#)
 
 - Market Sphere Vendor is a mobile application for vendors to manage their products, view orders, and track sales performance. Built using Flutter, it provides a robust interface for seamless vendor operations.
 - Developed under the **Market Sphere Project**.
