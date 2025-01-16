@@ -19,7 +19,7 @@ class _MainScreenState extends State<MainScreen> {
     EarningsScreen(),
     UploadsScreen(),
     EditScreen(),
-    OrdersScreen()
+    OrderScreen()
   ];
 
   @override

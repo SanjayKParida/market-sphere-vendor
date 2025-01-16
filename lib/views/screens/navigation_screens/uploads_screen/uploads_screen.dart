@@ -367,6 +367,7 @@ class _UploadsScreenState extends ConsumerState<UploadsScreen> {
                           try {
                             await productController
                                 .uploadProduct(
+                              id: '',
                               productName: productName,
                               productPrice: productPrice,
                               quantity: quantity,

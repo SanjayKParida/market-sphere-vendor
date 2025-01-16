@@ -10,7 +10,8 @@ import '../core/constants.dart';
 
 class ProductController {
   Future<void> uploadProduct(
-      {required String productName,
+      {required String id,
+      required String productName,
       required int productPrice,
       required int quantity,
       required String description,
@@ -38,6 +39,7 @@ class ProductController {
 
       if (category.isNotEmpty && subCategory.isNotEmpty) {
         final ProductModel product = ProductModel(
+          id: id,
           productName: productName,
           productPrice: productPrice,
           quantity: quantity,
